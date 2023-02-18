@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.villvay.auth0.application: TRACE
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: yOe1t513V0TrvN7kZdMpEmUivzRwJ4dE
+            client-secret: fMeuE1_jkMUQBDQ3EFg1trDSE4mFpXTGGKSmh_-OVikwNmE--MDtCme40Q4AXBzO
+            scope:
+             
+        provider:
+          auth0:
+         
+            issuer-uri: https://dev-amila-iroshan.us.auth0.com/
+            
+            
+      
+          

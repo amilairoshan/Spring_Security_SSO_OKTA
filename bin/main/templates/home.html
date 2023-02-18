@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/default}">
+
+
+    
+    
+<div id="page" layout:fragment="content">
+    <div class="container">
+        <div class="mt-5">
+            <div class="text-center hero my-5">
+                <img class="mb-3 app-logo" src="/images/LOG.JPG" alt="Spring logo" width="180"/>
+                <h1 class="mb-4">WELCOME  <div class="dropdown-header" th:text="${profile.get('name')}"></div></h1>
+               
+            </div>
+
+            <hr/>
+<p>
+        <div>List of Items</div>
+        </p>
+      
+     	<div th:if="${ not#lists.isEmpty(shopingcart)}">
+          <table>
+            <tr>
+              <th>Item Id</th>
+              <th>Item Name</th>
+              <th>No of Unit</th>
+              <th>Unit Price</th>
+            </tr>
+            <tr th:each="shopingcart : ${shopingcart.item}">
+              <td th:text="${shopingcart.itemId}"></td>
+              <td th:text="${shopingcart.itemName}"></td>
+              <td th:text="${shopingcart.noOfUnit}"></td>
+               <td th:text="${shopingcart.unitPrice}"></td>
+            </tr>
+          <table>
+        </div>
+           
+        </div>
+    </div>
+</div> 
+
+</html>

@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.auth0.application: TRACE
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: provide your client id
+            client-secret: provide your secret id
+            scope:
+             
+        provider:
+          auth0:
+         
+            issuer-uri: provide your issuer
+            
+            
+      
+          
