@@ -30,7 +30,7 @@ The application will be accessible at http://localhost:8080/.
 
 HttpResponse<String> response = Unirest.post("https://dev-amila-iroshan.us.auth0.com/oauth/token")
   .header("content-type", "application/json")
-  .body("{\"client_id\":\"AVxkJdUnXSSH2ZPfl\",\"client_secret\":\"S5S3SqPVS5IUbCaTzfStYibfFGWpI89PqB_M_7x0F0Jpj\",\"audience\":\"https://Villvay-assignment-api/api\",\"grant_type\":\"client_credentials\"}")
+  .body("{\"client_id\":\"AVxkJdUnXSSH2ZPfl\",\"client_secret\":\"S5SB_M_7x0F0Jpj\",\"audience\":\"https://FFt-api/api\",\"grant_type\":\"client_credentials\"}")
   .asString();
 
 
@@ -42,11 +42,12 @@ Method type = GET
 Header = authorization : Bearer "value of access_token"
 URL = http://localhost:8080/api/cartDetails
 
+Read more about this project : https://medium.com/@vpaipathirana/spring-boot-security-sso-oauth2-with-okta-88bbb08e3bee
 
 
 
 
-
+😊😊
 
 
 
