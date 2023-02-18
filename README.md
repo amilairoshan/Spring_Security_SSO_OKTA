@@ -1,4 +1,4 @@
-# Name : V.P.A.Iroshan
+# Name : Amila Iroshan
 
 The objectives of this application is:
 
