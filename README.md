@@ -1,19 +1,16 @@
-# Technical Assignment
 # Name : V.P.A.Iroshan
-# Mobile No : 0779010639
 
 The objectives of this application is:
 
-- Provide authentication to authenticated users(Onborded users) by using Auth0 and Spring security,
-- Authenticate API(Rest end point) using JWT.
-- Allowing authenticated users to access certain resources.
-- Provide authentication with credentials(usernae and password) and social like Google. 
+-Provide authentication and authorization to spring boot web application using okta. (allow social login along with Google) 
+- Authenticate API(Rest end point) with JWT using okta.
+- Manage users using okta user management.
 
 ### Application configuration
 
 - src/main/resources/application.yml property file contains the client-id and client-secret which are provided by auth0. 
-	client-id: yOe1t513V0TrvN7kZdMpEmUivzRwJ4dE
-    client-secret: fMeuE1_jkMUQBDQ3EFg1trDSE4mFpXTGGKSmh_-OVikwNmE--MDtCme40Q4AXBzO
+	client-id: 
+    client-secret: 
 
 - Application run on port: 8080
 
@@ -24,9 +21,7 @@ Then Open a terminal, go to the project root directory and run the following com
 
 The application will be accessible at http://localhost:8080/.
 
-Then apply on boarded user credentials.
-Un : amila@gmail.com
-PW : Amila@1234
+
 
 
 ### Accessing Rest End points(API Authentication)
@@ -35,7 +30,7 @@ PW : Amila@1234
 
 HttpResponse<String> response = Unirest.post("https://dev-amila-iroshan.us.auth0.com/oauth/token")
   .header("content-type", "application/json")
-  .body("{\"client_id\":\"AVxkJdUnXSSJBcU4ip9VROKpXlH2ZPfl\",\"client_secret\":\"S5S3SqPVSv5UFa4879djdTG4qKSL5IUbCaTzfStYibfFGWpI89PqB_M_7x0F0Jpj\",\"audience\":\"https://Villvay-assignment-api/api\",\"grant_type\":\"client_credentials\"}")
+  .body("{\"client_id\":\"AVxkJdUnXSSH2ZPfl\",\"client_secret\":\"S5S3SqPVS5IUbCaTzfStYibfFGWpI89PqB_M_7x0F0Jpj\",\"audience\":\"https://Villvay-assignment-api/api\",\"grant_type\":\"client_credentials\"}")
   .asString();
 
 
